@@ -4,6 +4,7 @@ const removeFromArray = function() {
         for (let indexArray = 0; indexArray < arrayToBeRemoved.length; indexArray++) {
             if (arrayToBeRemoved[indexArray] === arguments[indexArguments]) {
                 arrayToBeRemoved.splice(indexArray, 1);
+                indexArguments--;
             }            
         }        
     }
